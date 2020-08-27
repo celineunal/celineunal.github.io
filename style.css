@@ -22,6 +22,17 @@ p {
     padding: 0;
 }
 
+#header {
+    font-family: 'Lora', serif;
+    font-size: 150px;
+    color: var(--lightmid);
+    border: 0px;
+}
+
+#subheader {
+    color: var(--lightmid)
+}
+
 .fullpage {
     display: block;
     min-height: 100%;
@@ -40,16 +51,35 @@ p {
 }
 
 #bottomgr {
+    display: flex;
+    flex-flow: row nowrap;
     height: 69.722%;
     background: var(--light);
 }
 
-#header {
-    font-family: 'Lora', serif;
-    font-size: 150px;
-    color: var(--lightmid);
+#thirds {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    height: 90%;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-#subheader {
-    color: var(--lightmid)
+
+#photocontainer {
+    display: flex;
+    width: 33%;
+    height: 100%;
+    background: black;
+    justify-content: center;
+    align-items: center;
+}
+
+#photo {
+    background-image: url("celinephoto.png");
+    background-size: cover;
+    width: 90%;
+    padding-top: 100%;
+    position: relative;
 }
