@@ -1,20 +1,22 @@
 :root {
-    --darkest: #49274A;
-    --darkmid: #94618E;
-    --mid: #F08B7D;
-    --lightmid: #F4DECB;
-    --light: #F8EEE7;
+    --dark: #2A1F38;
+    --darkaccent: #BA3D65;
+    --main: #DDAB9F;
+    --lightaccent: #B4A4A2;
+    --light: #F6FAEF;
 }
 
 html, body {
     height: 100%;
     margin: 0;
-    background: var(--light);
+    background: var(--dark);
 }
 
 body {
     font-family: 'Alegreya', serif;
     font-size: 1.77vw;
+    color: var(--dark);
+    display: none;
 }
 
 p {
@@ -24,125 +26,69 @@ p {
 
 a {
     text-decoration: none;
-    color: var(--darkmid);
+    color: var(--main);
     margin-left: 1%;
     margin-right: 1%;
+}
+
+.fullpage {
+    display: none;
+    flex-flow: column nowrap;
+    min-height: 100%;
+    height: 100%;
+    align-content: center;
+    align-items: center;
 }
 
 #header {
     font-family: 'Lora', serif;
     font-size: 9.8vw;
     line-height: 100%;
-    color: var(--lightmid);
+    color: var(--main);
 }
 
 #subheader {
-    color: var(--lightmid)
-}
-
-.fullpage {
-    display: block;
-    min-height: 100%;
-    height: 100%
+    color: var(--lightaccent)
 }
 
 #topgr {
-    display: flex;
+    display: none;
     flex-flow: column nowrap;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    background: var(--darkest);
+    background: var(--dark);
     height: 30.278%;
     text-align: center;
-    vertical-align: middle;
-}
-
-#bottomgr {
-    display: flex;
-    flex-flow: column nowrap;
-    height: 69.722%;
-    background: var(--light);
-}
-
-#thirds {
-    display: flex;
-    flex-flow: row nowrap;
-    width: 100%;
-    height: 91%;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-
-#photocontainer {
-    display: flex;
-    width: 33%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-#photo {
-    background-image: url("celinephoto.png");
-    background-size: cover;
-    width: 90%;
-    padding-top: 90%;
-    position: relative;
-    border-radius: 50%;
-}
-
-#twothirdstext {
-    display: flex;
-    position: relative;
-    width: 67%;
-    height: 100%;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
-}
-
-#bio {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-evenly;
-    height: 75%;
-    width: 90%;
-    text-align: justify;
-}
-
-.biotext {
-    font-size: 1.2vw;
+    padding-top: 15%;
 }
 
 #links {
-    display: flex;
-    width: 90%;
-    height: 5%;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.linktext {
-    font-family: 'Lora', serif;
-    color: var(--mid);
-    text-decoration: underline;
-
-    font-size: 1.4vw;
-}
-
-#bottombar {
-    display: flex;
+    display: none;
     width: 100%;
-    height: 9%;
+    height: 25%;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    font-size: 2vw;
-    background: var(--darkest);
+}
+
+.linktext {
+    width: 17%;
+    text-align: center;
+    font-family: 'Lora', serif;
+    color: var(--darkaccent);
+    font-size: 3vw;
+}
+
+#bottombar {
+    display: none;
+    width: 30%;
+    height: 40%;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-size: 3vw;
 }
 
 .fas, .fab {
-    color: var(--lightmid)
+    color: var(--main);
 }
