@@ -13,8 +13,8 @@ html, body {
 }
 
 body {
-  font-family: 'Alegreya', serif;
-  font-size: 24px;
+    font-family: 'Alegreya', serif;
+    font-size: 1.77vw;
 }
 
 p {
@@ -31,9 +31,9 @@ a {
 
 #header {
     font-family: 'Lora', serif;
-    font-size: 150px;
+    font-size: 9.8vw;
+    line-height: 100%;
     color: var(--lightmid);
-    border: 0px;
 }
 
 #subheader {
@@ -68,7 +68,7 @@ a {
     display: flex;
     flex-flow: row nowrap;
     width: 100%;
-    height: 90%;
+    height: 91%;
     justify-content: flex-start;
     align-items: center;
 }
@@ -81,7 +81,6 @@ a {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    flex-grow: 1;
 }
 
 #photo {
@@ -95,45 +94,55 @@ a {
 
 #twothirdstext {
     display: flex;
+    position: relative;
     width: 67%;
     height: 100%;
     flex-flow: column nowrap;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 #bio {
-    height: 80%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    height: 75%;
     width: 90%;
     text-align: justify;
 }
 
 .biotext {
-    margin-top: 2%;
+    font-size: 1.2vw;
 }
 
 #links {
     display: flex;
     width: 90%;
-    height: 20%;
+    height: 5%;
     flex-flow: row nowrap;
-    flex-grow: 1;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .linktext {
     font-family: 'Lora', serif;
     color: var(--mid);
     text-decoration: underline;
-    margin: 5%
+
+    font-size: 1.4vw;
 }
 
 #bottombar {
     display: flex;
     width: 100%;
-    height: 100%;
+    height: 9%;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
+    font-size: 2vw;
+    background: var(--darkest);
+}
+
+.fas, .fab {
+    color: var(--lightmid)
 }
