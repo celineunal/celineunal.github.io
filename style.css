@@ -14,7 +14,7 @@ html, body {
 
 body {
     font-family: 'Alegreya', serif;
-    font-size: 1.77vw;
+    font-size: 2vw;
     color: var(--dark);
     display: none;
 }
@@ -91,4 +91,18 @@ a {
 
 .fas, .fab {
     color: var(--main);
+}
+
+@media (orientation: portrait) {
+    #header {
+        font-size: 9.8vh;
+    }
+    
+    #subheader {
+        font-size: 2vh;
+    }
+    
+    #linktext. #bottombar {
+        font-size: 3vh;
+    }
 }
