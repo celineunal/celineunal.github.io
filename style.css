@@ -94,12 +94,6 @@ a {
     color: var(--main);
 }
 
-@keyframes shine {
-    from {
-        
-    }
-}
-
 @media (orientation: portrait) {
     
     #links {
