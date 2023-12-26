@@ -6,10 +6,10 @@ jQuery(document).ready(function(){
         $.when (
             $("#content").children().each(
                 function(i, element){
-                    $(element).fadeTo(1000 + i*600, 1);
+                    $(element).fadeTo(1000 + i*500, 1);
             }).promise()
         ).done(function(){
-            $("#footnotetxt").fadeTo(200, 1);
+            $("#footnotetxt").fadeTo(400, 1);
         });
     });
 });
