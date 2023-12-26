@@ -1,9 +1,7 @@
 :root {
-    --dark: #2A1F38;
-    --darkaccent: #BA3D65;
-    --main: #DDAB9F;
-    --lightaccent: #B4A4A2;
-    --light: #F6FAEF;
+    --dark: #0A070D;
+    --main: #FFE2C2;
+    --accent: #3A342C;
 }
 
 html, body {
@@ -13,10 +11,12 @@ html, body {
 }
 
 body {
-    font-family: 'Alegreya', serif;
+    font-family: 'Ubuntu Mono', monospace;
     font-size: 2vw;
     color: var(--dark);
-    display: none;
+    height: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 p {
@@ -29,103 +29,39 @@ a {
     color: var(--main);
     margin-left: 1%;
     margin-right: 1%;
+    opacity: 0;
 }
 
-.fullpage {
-    display: none;
-    flex-flow: column nowrap;
-    min-height: 100%;
-    height: 100%;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-}
-
-#header {
-    font-family: 'Lora', serif;
-    font-size: 9.8vw;
-    line-height: 100%;
-    color: var(--main);
-}
-
-#subheader {
-    color: var(--lightaccent)
-}
-
-#topgr {
-    display: none;
-    flex-flow: column nowrap;
-    justify-content: flex-end;
-    align-items: center;
-    background: var(--dark);
-    height: 30.278%;
-    text-align: center;
-    padding-top: 15%;
-}
-
-#links {
-    display: none;
-    width: 100%;
-    height: 25%;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.linktext {
-    width: 17%;
-    text-align: center;
-    font-family: 'Lora', serif;
-    color: var(--darkaccent);
-    font-size: 3vw;
-}
-
-#bottombar {
-    display: none;
+#content {
+    padding-top: 5%;
+    padding-left: 35%;
+    display: flex;
     width: 30%;
-    height: 40%;
-    flex-flow: row wrap;
+    height: 70%;
+    flex-flow: column wrap;
     justify-content: space-around;
-    align-items: flex-start;
-    font-size: 3vw;
+    align-items: center;
+    font-size: 4vw;
 }
 
-.fas, .fab {
-    color: var(--main);
+#footnote {
+    color: var(--accent);
+    text-align: center;
+    margin-top: 3%;
+    font-size: 1.5vw;
+}
+
+#footnotetxt {
+    opacity: 0;
 }
 
 @media (orientation: portrait) {
     
-    #links {
-        display: none;
-        width: 100%;
-        height: 40%;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    #topgr {
-        padding-top: 40%;
-    }
-    
-    #header {
-        font-size: 9.8vh;
-    }
-    
-    #subheader {
-        font-size: 2vh;
-    }
-    
-    #bottombar {
+    #content {
         width: 90%;
-        font-size: 3.5vh;
-    }
-    
-    .linktext {
-        width: 100%;
-        font-size: 4vh;
-        padding-top: 1.5%;
-        padding-bottom: 1.5%;
+        padding-left: 5%;
+        height: 90%;
+        padding-top: 2%;
+        font-size: 10vw;
     }
 }

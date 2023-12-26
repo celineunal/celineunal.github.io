@@ -11,7 +11,9 @@
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
         <link rel="manifest" href="/site.webmanifest">
-        <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&family=Lora:wght@700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">        
         <link href="style.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/8b847668e0.js" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -19,19 +21,14 @@
         <base target="_blank">
     </head>
     <body>
-        <div class="fullpage">
-            <div id="topgr">
-                <p id="header">celine</p>
-                <p id="subheader">analytics consultant, jack of all trades, soccer enthusiast</p>
-            </div>
-            <div id="links">
-                <a href="resume.pdf" class="linktext">RESUME</a>
-            </div>
-            <div id="bottombar">
+        <div id="content">
+                <a href="resume.pdf" class="fas fa-file-alt"></a>
                 <a href="mailto:me@celineunal.com" class="fas fa-envelope"></a>
                 <a href="https://www.linkedin.com/in/celineunal" class="fab fa-linkedin-in"></a>
-                <a href="https://github.com/celineunal" class="fab fa-github"></a>
-            </div>
+                <a href="https://github.com/celineunal" class="fab fa-github" id="last-item"></a>
+        </div>
+        <div id="footnote">
+            <p id="footnotetxt">celine unal, 2024.</p>
         </div>
     </body>
 </html>
