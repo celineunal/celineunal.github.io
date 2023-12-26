@@ -6,7 +6,7 @@ jQuery(document).ready(function(){
         $.when (
             $("#content").children().each(
                 function(i, element){
-                    $(element).fadeTo(700 + i*400, 1);
+                    $(element).fadeTo(1000 + i*600, 1);
             }).promise()
         ).done(function(){
             $("#footnotetxt").fadeTo(200, 1);
